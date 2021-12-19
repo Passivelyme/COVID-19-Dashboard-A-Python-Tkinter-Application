@@ -51,3 +51,4 @@ In the code we basically use the concept of if else and for loop.
 * The refresh button only appears when the choice 1-2 is entered.
 
 ## #All the data taken are from the csv file and according to government site, the csv contain data till First October,2021
+### This code is simple and can be modified according to many different file types.
