@@ -7,7 +7,7 @@ Things you'll need:
 * [Python](https://www.python.org/downloads/)
 * [pip](https://pypi.org/project/pip/)
 * pandas package
-  >pip install pandas
+  >pip install pandas, tkinter, csv
 * Rest of the packages are inbuilt so no worries.
 
 ## Functions ins the code
