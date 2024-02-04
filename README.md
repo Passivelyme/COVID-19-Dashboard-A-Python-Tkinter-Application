@@ -1,54 +1,56 @@
-# Representing data using tkinter
+ ### COVID-19 Dashboard: A Python Tkinter Application
 
-This is a simple introduction to use the code in any way to represent data in gui from using python's inbuilt function tkinter from a csv file VS Code.
+This repository contains the code for a COVID-19 dashboard application developed using Python and the Tkinter library. The application provides a user-friendly interface for viewing COVID-19 data in two different ways: date-wise and state-wise.
 
-Things you'll need:
+#### Prerequisites
 
-* [Python](https://www.python.org/downloads/)
-* [pip](https://pypi.org/project/pip/)
-* pandas package
-  >pip install pandas, tkinter, csv
-* Rest of the packages are inbuilt so no worries.
+To run this application, you will need the following:
 
-## Functions ins the code
+- Python 3 or later
+- Tkinter library (usually comes pre-installed with Python)
+- Pandas library
 
->def restart_program():
-  
-  This function is to restart the whole tkinter window
+#### Installation
 
->def submit():
+To install the required libraries, open a terminal or command prompt and run the following commands:
 
-This function is main as in this we take the input from the user and use the tkinter entry command to use the user input data for searching the specific data in the csv files.
+```
+pip install tkinter
+pip install pandas
+```
 
->def iget():
+#### Running the Application
 
-This function is to trigger the command
->n_but=Button(main_root,text = 'Next', command =iget)
+Once the required libraries are installed, you can run the application by following these steps:
 
-as this command will call the function and it will act as a enter key in the tkinter window.
+1. Clone this repository to your local machine.
+2. Open the `main.py` file in a text editor or IDE.
+3. Make sure the Python interpreter is set to Python 3 or later.
+4. Run the `main.py` file by clicking the "Run" button in your IDE or by using the following command in the terminal:
 
-## Csv files
+```
+python main.py
+```
 
-states.csv and state_wise.csv are used in the code
+#### User Interface
 
->These csv files are taken from the gov site [Csv file](https://data.covid19india.org/)
+The application's user interface consists of the following elements:
 
-# Rough idea of the GUI
+- **Title:** "COVID-19 Dashboard"
+- **Instruction:** "Covid-19 Data can be viewed in below two ways"
+- **Options:**
+  - "1- Display Data as Date wise"
+  - "2- Display Data as State wise"
+- **Choice Entry:** A text entry field for the user to enter their choice (1 or 2)
+- **Submit Button:** A button to submit the user's choice
+- **Output:** A text area that displays the COVID-19 data based on the user's choice
 
-In the code we basically use the concept of if else and for loop.
+#### Code Explanation
 
-* first the user is provided with two options of how the data is to be represented.
+The code for the application is organized into several functions:
 
->Display the data as Date wise
+- `restart_program()`: This function restarts the program when the "Refresh" button is clicked.
+- `submit()`: This function is called when the user clicks the "Submit" button. It takes the user's choice and displays the COVID-19 data accordingly.
+- `iget()`: This function is called when the user clicks the "Next" button after entering a date or state. It retrieves the data from the CSV files and displays it in the text area.
 
->Display the data as State wise
-
-* Then the user is supposed to enter 1 or 2 according to the choice.
-* if the choice is 1 the the date that can be entered is
- between 30-10-2020 to 01-10-2021 and press next.
-* If the choice is 2 the just state name has to be entered with th first letter in capslock on and press next.
-* If by any chance the users need to start over he can just press the refresh button 
-* The refresh button only appears when the choice 1-2 is entered.
-
-## #All the data taken are from the csv file and according to government site, the csv contain data till First October,2021
-### This code is simple and can be modified according to many different file types.
+The main logic of the application is as follows:
