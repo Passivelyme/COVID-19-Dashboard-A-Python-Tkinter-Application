@@ -52,5 +52,3 @@ The code for the application is organized into several functions:
 - `restart_program()`: This function restarts the program when the "Refresh" button is clicked.
 - `submit()`: This function is called when the user clicks the "Submit" button. It takes the user's choice and displays the COVID-19 data accordingly.
 - `iget()`: This function is called when the user clicks the "Next" button after entering a date or state. It retrieves the data from the CSV files and displays it in the text area.
-
-The main logic of the application is as follows:
